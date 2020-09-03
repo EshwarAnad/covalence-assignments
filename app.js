@@ -48,16 +48,33 @@
 
 // favName item is showing refError, because of scopping!
 
-let name = ['abhishek', 'naidu', 'bunga']
-function printName() {
-    let favName = name[2]
-    console.log(name[0])
+// let name = ['abhishek', 'naidu', 'bunga']
+// function printName() {
+//     let favName = name[2]
+//     console.log(name[0])
 
-    function printFavName() {
-        console.log(favName)
+//     function printFavName() {
+//         console.log(favName)
+//     }
+//     printFavName()
+// }
+
+// printName()
+// printFavName()
+
+// Part 3 Closures:
+
+// It is the combination of functions and lexical scopes, 
+
+function doStuff() {
+    let name = 'naidu'
+    function callthis() { // before executing this, it all remembers all the variables that exists inside of doStuff func.
+        console.log(name)
     }
-    printFavName()
+    return callthis
 }
 
-printName()
-// printFavName()
+let n = doStuff(); // n is also remember all the variables and declarations, before
+// the callback funct
+
+n()
