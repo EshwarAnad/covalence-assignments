@@ -48,3 +48,16 @@
 
 // favName item is showing refError, because of scopping!
 
+let name = ['abhishek', 'naidu', 'bunga']
+function printName() {
+    let favName = name[2]
+    console.log(name[0])
+
+    function printFavName() {
+        console.log(favName)
+    }
+    printFavName()
+}
+
+printName()
+// printFavName()
