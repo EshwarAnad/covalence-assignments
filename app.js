@@ -1,7 +1,7 @@
-name = 'abhishek'
-// var name
-let name // using let, we get reference error because of not following hoisting rules!
-console.log(name)
+// name = 'abhishek'
+// var name // Only the declarations using the var keyword are hoisted
+// let name // using let, we get reference error because of not following hoisting rules!
+// console.log(name)
 // Hoisting is applicable just for var variables and not for let or const keywords
 
 // Hoisting follows in this order:
@@ -10,4 +10,20 @@ console.log(name)
 // and other functions are getting hoisted.
 
 // Note: Inside of a function also, all hoisted in the same order as mentioned above!
+
+// setName()
+// function setName() {
+//     var name = 'abhishek'
+//     console.log(name)
+// }
+// works as expected!
+
+// console.log('some text');
+// let avg = findAvg(2, 2);
+// console.log('some text', avg);
+// function findAvg(a, b) {
+//     console.log('some text');
+//     var answer = ( a + b) / 2;
+//     return answer;
+// }
 
