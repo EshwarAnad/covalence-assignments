@@ -1,3 +1,5 @@
+// Part 1 Hoisting
+
 // name = 'abhishek'
 // var name // Only the declarations using the var keyword are hoisted
 // let name // using let, we get reference error because of not following hoisting rules!
@@ -26,4 +28,23 @@
 //     var answer = ( a + b) / 2;
 //     return answer;
 // }
+
+
+// Part 2 Scoping
+
+// let name = ['abhishek', 'bunga', 'naidu']
+// // let favName
+// function printName() {
+//     let favName = name[2]
+//     console.log(name[0])
+// }
+
+// function printFavName() {
+//     console.log(favName)
+// }
+
+// printName()
+// printFavName()
+
+// favName item is showing refError, because of scopping!
 
